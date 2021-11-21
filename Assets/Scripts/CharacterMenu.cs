@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CharacterMenu : MonoBehaviour
 {
+    // text fields
     public Text levelText, hitpointText, pesosText, upgradeCostText, xpText;
 
     // logic
@@ -16,53 +17,80 @@ public class CharacterMenu : MonoBehaviour
     // character selection
     public void OnArrowClick(bool right)
     {
-        if(right)
+        if (right)
         {
             currentCharacterSelection++;
 
-            // if there are no more sprites
+            // if there is no more character
             if(currentCharacterSelection == GameManager.instance.playerSprites.Count)
                 currentCharacterSelection = 0;
-            
+
             OnSelectionChanged();
         }
+
         else
         {
             currentCharacterSelection--;
 
-            // if there are no more sprites
+            // if there is no more character
             if(currentCharacterSelection < 0)
-                currentCharacterSelection = GameManager.instance.playerSprites.Count -1;
-            
+                currentCharacterSelection = GameManager.instance.playerSprites.Count - 1;
+
             OnSelectionChanged();
         }
     }
+
     private void OnSelectionChanged()
     {
         characterSelectionSprite.sprite = GameManager.instance.playerSprites[currentCharacterSelection];
+        GameManager.instance.player.SwapSprite(currentCharacterSelection);
     }
 
     // weapon upgrade
     public void OnUpgradeClick()
     {
-        // GameManager
+        if(GameManager.instance.TryUpgradeWeapon())
+            UpdateMenu();
     }
 
     // update character information
     public void UpdateMenu()
     {
-        // weapon
-        weaponSprite.sprite = GameManager.instance.weaponSprites[0];
-        upgradeCostText.text = "NOT IMPLEMENTED";
+        // Weapon
+        weaponSprite.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
+        if(GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
+            upgradeCostText.text = "MAX";
+        else
+            upgradeCostText.text = GameManager.instance.weaponPrices[GameManager.instance.weapon.weaponLevel].ToString(); 
 
-        // meta
-        hitpointText.text = GameManager.instance.player.hitpoint.ToString() + GameManager.instance.player.maxHitpoint.ToString();
+        // Meta
+        levelText.text = GameManager.instance.GetCurrentLevel().ToString();
+        hitpointText.text = GameManager.instance.player.hitpoint.ToString() + "/" + GameManager.instance.player.maxHitpoint.ToString();
         pesosText.text = GameManager.instance.pesos.ToString();
-        levelText.text = "NOT IMPLEMENTED";
 
-        // XPbar
-        xpText.text = "NOT IMPLEMENTED";
-        xpBar.localScale = new Vector3 (0.5f, 0, 0);
+        // xp bar
+        int currLevel = GameManager.instance.GetCurrentLevel();
+        if(currLevel == GameManager.instance.xpTable.Count)
+        {
+            xpText.text = GameManager.instance.experience.ToString() + " total experience points"; // Display total xp
+            xpBar.localScale = Vector3.one;
+        }
+
+        else
+        {
+            int prevLevelXp = GameManager.instance.GetXpToLevel(currLevel - 1);
+            int currLevelXp = GameManager.instance.GetXpToLevel(currLevel);
+
+            int diff = currLevelXp - prevLevelXp;
+            int currXpIntoLevel = GameManager.instance.experience - prevLevelXp;
+
+            float completionRatio = (float)currXpIntoLevel / (float) diff;
+            xpBar.localScale = new Vector3(completionRatio, 1, 1);
+            xpText.text = currXpIntoLevel.ToString() + " / " + diff;
+        }
+
+
     }
+
 
 }

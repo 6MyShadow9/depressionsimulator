@@ -3547,7 +3547,7 @@ GameObject:
   - component: {fileID: 400896266}
   - component: {fileID: 400896265}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3615,7 +3615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 400896266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 377889908}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &400896266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3876,7 +3888,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1031
+  m_Text: 
 --- !u!222 &497037511
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4054,7 +4066,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10/50
+  m_Text: 
 --- !u!222 &546376975
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17745,7 +17757,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10 / 500
+  m_Text: 
 --- !u!222 &824487035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17942,8 +17954,15 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damagePoint: 2
-  pushForce: 5
+  damagePoint: 0100000002000000030000000400000005000000060000000a000000
+  pushForce:
+  - 2
+  - 2.2
+  - 2.5
+  - 3
+  - 3.2
+  - 3.6
+  - 4
   weaponLevel: 0
 --- !u!61 &847822138
 BoxCollider2D:
@@ -18060,7 +18079,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: 
 --- !u!222 &909660096
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18128,7 +18147,7 @@ GameObject:
   - component: {fileID: 1075464934}
   - component: {fileID: 1075464933}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18196,7 +18215,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1075464934}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 377889908}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1075464934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18695,7 +18726,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1346139780}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 377889908}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnUpgradeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1346139780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19120,9 +19163,10 @@ MonoBehaviour:
   - {fileID: -5574873882498854606, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
   - {fileID: -9052792337493064725, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
   - {fileID: -7870807981238829915, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
-  weaponPrices: 
-  xpTable: 
+  weaponPrices: 1e0000004600000082000000c80000001301000090010000
+  xpTable: 050000000a00000011000000190000001e0000002800000037000000460000005a0000006e000000
   player: {fileID: 584477764}
+  weapon: {fileID: 847822137}
   floatingTextManager: {fileID: 2106530528}
   pesos: 0
   experience: 0
@@ -19196,7 +19240,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 75
+  m_Text: 
 --- !u!222 &2093332354
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19275,6 +19319,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
+      propertyPath: xpValue
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
+      propertyPath: maxHitpoint
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2040502358719980763, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -19330,11 +19382,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6140066249857454544, guid: 3ea527e37b860224982cdd5d73671ae1, type: 3}
       propertyPath: hitpoint
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6140066249857454544, guid: 3ea527e37b860224982cdd5d73671ae1, type: 3}
       propertyPath: maxHitpoint
-      value: 69
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6140066249857454546, guid: 3ea527e37b860224982cdd5d73671ae1, type: 3}
       propertyPath: m_Name
@@ -19440,6 +19492,14 @@ PrefabInstance:
     - target: {fileID: 6258199591732545091, guid: 64aebf1949c981a4b9d7d9fac8021c22, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258199591732545100, guid: 64aebf1949c981a4b9d7d9fac8021c22, type: 3}
+      propertyPath: sceneNames.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6258199591732545100, guid: 64aebf1949c981a4b9d7d9fac8021c22, type: 3}
+      propertyPath: sceneNames.Array.data[0]
+      value: level2
       objectReference: {fileID: 0}
     - target: {fileID: 6258199591732545103, guid: 64aebf1949c981a4b9d7d9fac8021c22, type: 3}
       propertyPath: m_Name
