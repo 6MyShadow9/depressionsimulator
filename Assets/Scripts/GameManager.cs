@@ -131,13 +131,15 @@ public class GameManager : MonoBehaviour
 
     public void LoadState(Scene s, LoadSceneMode mode)
     {
-
+        SceneManager.sceneLoaded -= LoadState;
         if(!PlayerPrefs.HasKey("SaveState"))
             return;
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
         //change player skin
+
+        // change pesos number
         pesos = int.Parse(data[1]);
 
 

@@ -17956,13 +17956,13 @@ MonoBehaviour:
     maxNormalAngle: 0
   damagePoint: 0100000002000000030000000400000005000000060000000a000000
   pushForce:
-  - 2
-  - 2.2
-  - 2.5
   - 3
   - 3.2
-  - 3.6
+  - 3.5
   - 4
+  - 4.2
+  - 4.6
+  - 5.2
   weaponLevel: 0
 --- !u!61 &847822138
 BoxCollider2D:
@@ -19146,7 +19146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072235762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: -0.138, z: -0.17848831}
+  m_LocalPosition: {x: -0.406, y: -0.138, z: -0.17848831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19309,8 +19309,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
+      propertyPath: hitpoint
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
+      propertyPath: chaseLength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
       propertyPath: maxHitpoint
-      value: 10
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
+      propertyPath: triggerLength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
+      propertyPath: pushRecoverySpeed
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2040502358719980763, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
       propertyPath: m_RootOrder

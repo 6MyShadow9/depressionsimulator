@@ -7,7 +7,6 @@ public class enemy : mover
     // experience
     public int xpValue = 1;
 
-    // logic
     public float triggerLength = 0.3f;
     public float chaseLength = 1f;
     private bool chasing;

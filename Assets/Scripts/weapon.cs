@@ -57,7 +57,7 @@ public class weapon : Collidable
             {
                 damageAmount = damagePoint[weaponLevel],
                 origin = transform.position,
-                pushForce = pushForce[weaponLevel]
+                pushForce = pushForce[weaponLevel]*2.5f
             };
 
             coll.SendMessage("RecieveDamage", dmg);
