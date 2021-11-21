@@ -19306,7 +19306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
       propertyPath: xpValue
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2040502358719980762, guid: e76ddb4dc42c319468d1512fadf7cc8f, type: 3}
       propertyPath: maxHitpoint

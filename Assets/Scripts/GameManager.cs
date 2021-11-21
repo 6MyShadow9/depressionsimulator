@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     //references
     public Player player;
+    
     public weapon weapon;
 
     public FloatingTextManager floatingTextManager;
