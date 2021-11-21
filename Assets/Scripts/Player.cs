@@ -12,6 +12,8 @@ public class Player : mover
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        DontDestroyOnLoad(gameObject);
     }
 
     private void FixedUpdate()
