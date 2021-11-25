@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 
 public class Player : mover
@@ -50,5 +50,12 @@ public class Player : mover
         if(hitpoint > maxHitpoint)
             hitpoint = maxHitpoint;
         GameManager.instance.ShowText("+" + healingAmount.ToString() + "hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
+    }
+
+    // death
+    protected override void Death()
+    {
+        SceneManager.LoadScene("GameOver");
+        Destroy(gameObject);
     }
 }

@@ -56,6 +56,7 @@ public class CharacterMenu : MonoBehaviour
     // update character information
     public void UpdateMenu()
     {
+        
         // Weapon
         weaponSprite.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
         if(GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
