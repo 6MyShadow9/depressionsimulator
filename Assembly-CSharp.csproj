@@ -38,8 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Collectable.cs" />
+     <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Portal.cs" />
+     <Compile Include="Assets\Scripts\Crate.cs" />
      <Compile Include="Assets\Scripts\FloatingTextManager.cs" />
      <Compile Include="Assets\Scripts\FloatingText.cs" />
      <Compile Include="Assets\Scripts\EnemyHitbox.cs" />
@@ -53,8 +55,9 @@
      <Compile Include="Assets\Scripts\CharacterMenu.cs" />
      <Compile Include="Assets\Scripts\enemy.cs" />
      <Compile Include="Assets\Scripts\Chest.cs" />
-     <Compile Include="Assets\Scripts\Crate.cs" />
-     <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
+     <Compile Include="Assets\Scripts\DontDestroyStuff.cs" />
+     <Compile Include="Assets\Scripts\NPCText.cs" />
+     <Compile Include="Assets\Scripts\boss.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

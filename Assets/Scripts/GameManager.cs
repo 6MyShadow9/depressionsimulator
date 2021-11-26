@@ -14,12 +14,15 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(floatingTextManager.gameObject);
+            Destroy(hud);
+            Destroy(menu);
+
             return;
         }
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     //resources
@@ -34,6 +37,10 @@ public class GameManager : MonoBehaviour
     public weapon weapon;
 
     public FloatingTextManager floatingTextManager;
+    public RectTransform hitpointBar;
+
+    public GameObject menu;
+    public GameObject hud;
 
     //Logic
 
@@ -64,6 +71,14 @@ public class GameManager : MonoBehaviour
 
         return false;
     
+    }
+
+    // hp bar
+    public void OnHitPointChange()
+    {
+        float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
+        hitpointBar.localScale = new Vector3(1, ratio, 1);
+         
     }
 
     // xp system
@@ -107,14 +122,15 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("leveled up");
         player.OnLevelUp();
+        OnHitPointChange();
     }
-    //Save state
-    /*
-    *int preferedSkin
-    *int pesos 
-    *int experience
-    *int weaponLevel
-    */
+   
+    // on scene loaded
+    public void OnSceneLoaded(Scene s, LoadSceneMode mode)
+    {
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+    }
+
     public void SaveState()
     {
         string s = "";

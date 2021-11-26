@@ -14,6 +14,7 @@ public class CharacterMenu : MonoBehaviour
     public Image weaponSprite;
     public RectTransform xpBar;
 
+
     // character selection
     public void OnArrowClick(bool right)
     {

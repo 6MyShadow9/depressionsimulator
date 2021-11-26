@@ -5,13 +5,17 @@ ScriptsOnlyBuild:
     - CharacterMenu
     - Chest
     - Collidable
+    - Crate
+    - DontDestroyStuff
     - EnemyHitbox
     - FloatingTextManager
     - GameManager
     - HealingFountain
+    - NPCText
     - Player
     - Portal
     - SceneSwitcher
+    - boss
     - enemy
     - weapon
     Unity.2D.Animation.Editor.dll:
@@ -39,9 +43,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -197,6 +202,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2636}
     - Class: 114
+      Script: {instanceID: 2734}
+    - Class: 114
       Script: {instanceID: 2756}
     - Class: 114
       Script: {instanceID: 2918}
@@ -218,6 +225,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4822}
     - Class: 114
       Script: {instanceID: 5006}
+    - Class: 114
+      Script: {instanceID: 25840}
+    - Class: 114
+      Script: {instanceID: 51058}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -280,6 +291,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2434}
     - Class: 114
+      Script: {instanceID: 2498}
+    - Class: 114
       Script: {instanceID: 2582}
     - Class: 114
       Script: {instanceID: 2636}
@@ -301,6 +314,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4822}
     - Class: 114
       Script: {instanceID: 5006}
+    - Class: 114
+      Script: {instanceID: 69106}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -458,7 +473,7 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
-      Hash: 101d5ceee173488cd9cc74dbc577a7e7
+      Hash: 6ce7231458b17c541d381412ccc35e97
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -942,6 +957,24 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Chest
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DontDestroyStuff
+  - hash:
+      serializedVersion: 2
+      Hash: e3fe713bb75ddc4ad7e90f3f60b5a94f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPCText
+  - hash:
+      serializedVersion: 2
+      Hash: a2edc27397cd31cfb58b6d94c3dd9661
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: boss
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
