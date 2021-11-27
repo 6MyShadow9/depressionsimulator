@@ -22,7 +22,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -43,10 +42,9 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -88,11 +86,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2758}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3072}
+      Script: {instanceID: 3076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -137,11 +135,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2582}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2758}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3072}
+      Script: {instanceID: 3076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -202,33 +200,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2636}
     - Class: 114
-      Script: {instanceID: 2734}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2758}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 3072}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3284}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3770}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 4612}
+      Script: {instanceID: 3774}
     - Class: 114
-      Script: {instanceID: 4822}
+      Script: {instanceID: 4370}
     - Class: 114
-      Script: {instanceID: 5006}
+      Script: {instanceID: 4618}
     - Class: 114
-      Script: {instanceID: 25840}
+      Script: {instanceID: 4828}
     - Class: 114
-      Script: {instanceID: 51058}
+      Script: {instanceID: 5012}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -297,25 +295,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2636}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2758}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3072}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 3388}
+      Script: {instanceID: 3392}
     - Class: 114
-      Script: {instanceID: 3770}
+      Script: {instanceID: 3774}
     - Class: 114
-      Script: {instanceID: 4612}
+      Script: {instanceID: 4100}
     - Class: 114
-      Script: {instanceID: 4822}
+      Script: {instanceID: 4618}
     - Class: 114
-      Script: {instanceID: 5006}
+      Script: {instanceID: 4828}
     - Class: 114
-      Script: {instanceID: 69106}
+      Script: {instanceID: 5012}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -473,7 +471,7 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
-      Hash: 6ce7231458b17c541d381412ccc35e97
+      Hash: d9cf8ba6b12d6d8826738e7c7805a025
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -533,7 +531,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 50e3fe1f1ea3e9ced833dccbca986bee
+      Hash: 5a6e809d729e2786ce9938e704e1f7be
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -549,6 +547,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Portal
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DontDestroyStuff
   - hash:
       serializedVersion: 2
       Hash: 6b003a525dcabb02726b58adf929f282
@@ -603,6 +607,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FloatingTextManager
+  - hash:
+      serializedVersion: 2
+      Hash: e3fe713bb75ddc4ad7e90f3f60b5a94f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPCText
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -839,6 +849,12 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
+      Hash: a2edc27397cd31cfb58b6d94c3dd9661
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: boss
+  - hash:
+      serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -911,7 +927,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 5f8526a1f3767cbb5601da742d14b7b2
+      Hash: 6a28d1f0415eef794d959896be13d458
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterMenu
@@ -957,24 +973,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Chest
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DontDestroyStuff
-  - hash:
-      serializedVersion: 2
-      Hash: e3fe713bb75ddc4ad7e90f3f60b5a94f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NPCText
-  - hash:
-      serializedVersion: 2
-      Hash: a2edc27397cd31cfb58b6d94c3dd9661
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: boss
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

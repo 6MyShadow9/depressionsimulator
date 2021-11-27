@@ -45,14 +45,11 @@ TagManager:
   - name: Floor
     uniqueID: 3714997629
     locked: 0
-  - name: Humans
-    uniqueID: 1133599065
-    locked: 0
   - name: Interactable
     uniqueID: 2939705427
     locked: 0
-  - name: Text
-    uniqueID: 4264865383
+  - name: Humans
+    uniqueID: 1133599065
     locked: 0
   - name: Weapon
     uniqueID: 3413623007

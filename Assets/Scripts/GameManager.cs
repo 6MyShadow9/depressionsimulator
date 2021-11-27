@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public List<Sprite> weaponSprites;
     public List<int> weaponPrices;
     public List<int> xpTable;
+    public int x;
 
     //references
     public Player player;
@@ -38,9 +39,11 @@ public class GameManager : MonoBehaviour
 
     public FloatingTextManager floatingTextManager;
     public RectTransform hitpointBar;
+    public Animator DeathMenuAnim;
 
     public GameObject menu;
     public GameObject hud;
+    public CharacterMenu character;
 
     //Logic
 
@@ -131,11 +134,20 @@ public class GameManager : MonoBehaviour
         player.transform.position = GameObject.Find("SpawnPoint").transform.position;
     }
 
+    // respawn and death menu
+    public void Respawn()
+    {
+        DeathMenuAnim.SetTrigger("Hide");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        
+        player.Respawn();
+    }
+
+
     public void SaveState()
     {
         string s = "";
-
-        s += "0" + "|";
+        s += x.ToString() + "|";
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
         s += weapon.weaponLevel.ToString();
@@ -154,21 +166,25 @@ public class GameManager : MonoBehaviour
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
         //change player skin
+        x = int.Parse(data[0]);
+        player.SwapSprite(x);
 
         // change pesos number
         pesos = int.Parse(data[1]);
+        Debug.Log("pesos changed");
 
 
         // xp stuff
         experience = int.Parse(data[2]);
         if(GetCurrentLevel() != 1)
             player.SetLevel(GetCurrentLevel());
-
+        Debug.Log("experience changed");
 
         //Change the weapon level
         weapon.SetWeaponLevel (int.Parse(data[3]));
+        Debug.Log("weapon changed");
 
-        // spawnpoing
+        // spawnpoint
 
         player.transform.position = GameObject.Find("SpawnPoint").transform.position;
 
