@@ -187,8 +187,6 @@ public class GameManager : MonoBehaviour
         // spawnpoint
 
         player.transform.position = GameObject.Find("SpawnPoint").transform.position;
-
         Debug.Log("Load state");
     }
-
 }
