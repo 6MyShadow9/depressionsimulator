@@ -8,6 +8,7 @@ public class Player : mover
 {
     public SpriteRenderer spriteRenderer;
     private bool isAlive = true;
+    public bool buzisbool = true;
 
     protected override void Start()
     {
@@ -76,6 +77,7 @@ public class Player : mover
     {
         isAlive = false;
         GameManager.instance.DeathMenuAnim.SetTrigger("Show");
+
     }
 
     // respawn
@@ -83,8 +85,8 @@ public class Player : mover
     {
         Heal(maxHitpoint);
         isAlive = true;
+        buzisbool = false;
         lastImmune = Time.time;
         pushDirection = Vector3.zero;
-        
     }
 }

@@ -16,11 +16,14 @@ public class GameManager : MonoBehaviour
             Destroy(floatingTextManager.gameObject);
             Destroy(hud);
             Destroy(menu);
+            Destroy(eve);
 
             return;
         }
 
+
         instance = this;
+
         SceneManager.sceneLoaded += LoadState;
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -43,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject menu;
     public GameObject hud;
-    public CharacterMenu character;
+    public GameObject eve;
 
     //Logic
 
@@ -81,7 +84,6 @@ public class GameManager : MonoBehaviour
     {
         float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
         hitpointBar.localScale = new Vector3(1, ratio, 1);
-         
     }
 
     // xp system
@@ -137,9 +139,11 @@ public class GameManager : MonoBehaviour
     // respawn and death menu
     public void Respawn()
     {
+        PlayerPrefs.DeleteAll();
         DeathMenuAnim.SetTrigger("Hide");
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
-        
+        SceneManager.sceneLoaded += LoadState;
+
         player.Respawn();
     }
 
@@ -151,7 +155,6 @@ public class GameManager : MonoBehaviour
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
         s += weapon.weaponLevel.ToString();
-
         PlayerPrefs.SetString("SaveState", s);
         
         Debug.Log("Save state");
@@ -171,18 +174,15 @@ public class GameManager : MonoBehaviour
 
         // change pesos number
         pesos = int.Parse(data[1]);
-        Debug.Log("pesos changed");
 
 
         // xp stuff
         experience = int.Parse(data[2]);
         if(GetCurrentLevel() != 1)
             player.SetLevel(GetCurrentLevel());
-        Debug.Log("experience changed");
 
         //Change the weapon level
         weapon.SetWeaponLevel (int.Parse(data[3]));
-        Debug.Log("weapon changed");
 
         // spawnpoint
 
