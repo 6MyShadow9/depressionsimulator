@@ -30,7 +30,7 @@ public abstract class mover : Fighter
 
         // add push vector is there is any
         moveDelta += pushDirection;
-
+6z
         // reduce push force every frame, based off recdovery speed
         pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
 

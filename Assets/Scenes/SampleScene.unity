@@ -327,7 +327,8 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  message: "Sz\xF6veg helye"
+  message: "\xDCssed a cs\xFAnya dolgokat, meg a l\xE1d\xE1kat, vegy\xE9l fel p\xE9nzt
+    meg csin\xE1lj dolgokat"
 --- !u!61 &152105647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -436,11 +437,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6993285623893712828, guid: d4ad6356ef89c7446b403112b685ed11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.886
+      value: 1.011
       objectReference: {fileID: 0}
     - target: {fileID: 6993285623893712828, guid: d4ad6356ef89c7446b403112b685ed11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.025
+      value: 0.377
       objectReference: {fileID: 0}
     - target: {fileID: 6993285623893712828, guid: d4ad6356ef89c7446b403112b685ed11, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1743,16 +1744,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 3, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 13
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 4, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -1794,16 +1785,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 8, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 9, y: -1, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -2645,7 +2626,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 39
+  - m_RefCount: 38
     m_Data: {fileID: 11400000, guid: 17dbbdf5774d76f4c8ef39af45040d83, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 483180db8e3705a43b39a320f7bcf269, type: 2}
@@ -2671,7 +2652,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: ea9f512c375fd7342ba14652789909e3, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: fe01490d9f04d4649b6c5007b53ee045, type: 2}
-  - m_RefCount: 6
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: b272c055fb4136545b7d3bd3bde20812, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 61775276051f00041836a799047e29c8, type: 2}
@@ -2694,7 +2675,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: ed2d1f94b4dc57147830dfc224088c38, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 39
+  - m_RefCount: 38
     m_Data: {fileID: -6721728136321296765, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 5327950094024008212, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
@@ -2720,7 +2701,7 @@ Tilemap:
     m_Data: {fileID: 2592197434785513267, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 6913638643635410091, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
-  - m_RefCount: 6
+  - m_RefCount: 5
     m_Data: {fileID: 7029400602700474323, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 2185041290902523119, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
@@ -2743,7 +2724,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: -3456655499755000451, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 182
+  - m_RefCount: 180
     m_Data:
       e00: 1
       e01: 0
@@ -2762,7 +2743,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 182
+  - m_RefCount: 180
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -3788,9 +3769,13 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 60
     m_Data: {fileID: 11400000, guid: 17dbbdf5774d76f4c8ef39af45040d83, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 60
     m_Data: {fileID: -6721728136321296765, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 60
     m_Data:
@@ -3817,7 +3802,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -8, y: -6, z: 0}
-  m_Size: {x: 16, y: 15, z: 1}
+  m_Size: {x: 18, y: 15, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -5028,6 +5013,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff937badc6acaa44b102164362997f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &598871738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 598871739}
+  - component: {fileID: 598871740}
+  m_Layer: 0
+  m_Name: HealingFountain (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &598871739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598871738}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.1094142, y: -0.038654268, z: 0.09220542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1497961544}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &598871740
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598871738}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.044508427, y: 0.1208086}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16705638, y: 0.25607324}
+  m_EdgeRadius: 0
 --- !u!1 &608022768
 GameObject:
   m_ObjectHideFlags: 0
@@ -11480,8 +11522,8 @@ Tilemap:
   - first: {x: 9, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -18419,14 +18461,14 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1126
+  - m_RefCount: 1127
     m_Data: {fileID: 11400000, guid: 17dbbdf5774d76f4c8ef39af45040d83, type: 2}
-  - m_RefCount: 204
+  - m_RefCount: 203
     m_Data: {fileID: 11400000, guid: 483180db8e3705a43b39a320f7bcf269, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1126
+  - m_RefCount: 1127
     m_Data: {fileID: -6721728136321296765, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
-  - m_RefCount: 204
+  - m_RefCount: 203
     m_Data: {fileID: 5327950094024008212, guid: a18f6efc4b99beb4892927f6c6df9ce9, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1330
@@ -18588,6 +18630,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21df9da67bc4b134f92ba5203ccf3403, type: 3}
+--- !u!1 &798644301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798644302}
+  - component: {fileID: 798644303}
+  m_Layer: 0
+  m_Name: HealingFountain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798644302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798644301}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.31741425, y: -0.032654226, z: 0.09220542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1497961544}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &798644303
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798644301}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.044508427, y: 0.1208086}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16705638, y: 0.25607324}
+  m_EdgeRadius: 0
 --- !u!1 &823062945
 GameObject:
   m_ObjectHideFlags: 0
@@ -20555,6 +20654,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21df9da67bc4b134f92ba5203ccf3403, type: 3}
+--- !u!1 &1497961543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1497961544}
+  m_Layer: 0
+  m_Name: HealingFountains
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1497961544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497961543}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.75441426, y: 0.89265424, z: -0.18695062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 598871739}
+  - {fileID: 798644302}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1536445650
 GameObject:
   m_ObjectHideFlags: 0
